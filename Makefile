@@ -1,8 +1,8 @@
 all:
-	pdflatex main.tex
+	xelatex main.tex
 clean:
-	rm -f *.log *.toc *.aux
+	rm -f *.log *.toc *.aux *.out
 distclean: clean
-	rm *.pdf 
+	rm -f *.pdf 
 show: all
 	xdg-open main.pdf
