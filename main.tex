@@ -5,14 +5,16 @@
 \usepackage{tabularx}
 \usepackage{indentfirst}
 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\fancyheadoffset{0cm}
 
 \renewcommand{\contentsname}{Оглавление}
 \renewcommand\thesection{ГЛАВА \arabic{section}.}
 \renewcommand\thesubsection{\arabic{section}.\arabic{subsection}}
-
-\makeatletter
-\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
-\makeatother
 
 \usepackage{geometry} % Меняем поля страницы
 \geometry{left=3cm}% левое поле
