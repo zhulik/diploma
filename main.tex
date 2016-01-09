@@ -1,11 +1,13 @@
 \documentclass[12pt]{article}
 \usepackage{fontspec}
 \usepackage{array}
-\setmainfont[Mapping=tex-text]{Times New Roman}
 \usepackage{tabularx}
 \usepackage{indentfirst}
-
 \usepackage{fancyhdr}
+\usepackage{ragged2e}
+
+\setmainfont[Mapping=tex-text]{Times New Roman}
+
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[R]{\thepage}
@@ -22,7 +24,7 @@
 \geometry{top=2cm}% верхнее поле
 \geometry{bottom=2cm}% нижнее поле
 
-
+\sloppy
 \begin{document}
 \input{title}
 \input{task}
