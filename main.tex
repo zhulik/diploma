@@ -3,6 +3,12 @@
 \usepackage{array}
 \setmainfont[Mapping=tex-text]{Times New Roman}
 \usepackage{tabularx}
+\usepackage{indentfirst}
+
+
+\renewcommand{\contentsname}{Оглавление}
+\renewcommand\thesection{ГЛАВА \arabic{section}.}
+\renewcommand\thesubsection{\arabic{section}.\arabic{subsection}}
 
 \makeatletter
 \renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
@@ -16,7 +22,9 @@
 
 
 \begin{document}
-\input{title}% это титульный лист
-\input{task}% это титульный лист
+\input{title}
+\input{task}
 \tableofcontents % это оглавление, которое генерируется автоматически
+\input{introduction}
+\input{teor1}
 \end{document}

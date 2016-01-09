@@ -5,5 +5,5 @@ clean:
 	rm -f *.log *.toc *.aux *.out
 distclean: clean
 	rm -f *.pdf
-show: main.pdf
+show: distclean main.pdf  
 	xdg-open main.pdf
