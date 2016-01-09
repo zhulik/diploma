@@ -15,7 +15,7 @@
 \fancyheadoffset{0cm}
 
 \renewcommand{\contentsname}{Оглавление}
-\renewcommand\thesection{ГЛАВА \arabic{section}.}
+ \renewcommand\thesection{\arabic{section}.}
 \renewcommand\thesubsection{\arabic{section}.\arabic{subsection}}
 
 \usepackage{geometry} % Меняем поля страницы
@@ -29,7 +29,11 @@
 \input{title}
 \input{task}
 \tableofcontents % это оглавление, которое генерируется автоматически
+\input{annotation}
 \input{introduction}
-\input{teor1}
-\input{project}
+\input{analysis}
+\input{math}
+\input{program}
+\input{evaluation}
+\input{conclusion}
 \end{document}
