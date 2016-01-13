@@ -5,6 +5,19 @@
 \usepackage{indentfirst}
 \usepackage{fancyhdr}
 \usepackage{ragged2e}
+\usepackage{graphicx}
+
+
+\graphicspath{{images/}}
+
+\newcommand{\putimage}[3][1] {
+  \begin{figure}[h]
+  \center{\includegraphics[width=#1\linewidth]{#2}}
+  \caption{#3}
+  \label{ris:#2}
+  \end{figure}
+}
+
 
 \setmainfont[Mapping=tex-text]{Times New Roman}
 
