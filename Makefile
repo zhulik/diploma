@@ -1,7 +1,5 @@
 main.pdf: *.tex
-	xelatex main.tex
-	xelatex main.tex
-	xelatex main.tex
+	xelatex main.tex && xelatex main.tex
 all: main.pdf
 clean:
 	rm -f *.log *.toc *.aux *.out
