@@ -8,6 +8,7 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage{tabularx}
+\usepackage{longtable}
 
 
 
@@ -25,12 +26,12 @@
   \figurename \ref{ris:#1}
 }
 
-\newenvironment{ztable}[2]
-{\begin{table}[H]
+\newenvironment{ztable}[3]
+{\begin{longtable}[H]{#1}
   \captionsetup{justification=raggedleft,singlelinecheck=false}
-  \caption{#1 \label{tab:#2}}
+  \caption{#2 \label{tab:#3}} \\
 }
-{\end{table}}
+{\end{longtable}}
 
 
 \setmainfont[Mapping=tex-text]{Times New Roman}
