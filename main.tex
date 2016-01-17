@@ -1,12 +1,14 @@
 \documentclass[12pt]{article}
 \usepackage{fontspec}
 \usepackage{array}
-\usepackage{tabularx}
 \usepackage{indentfirst}
 \usepackage{fancyhdr}
 \usepackage{ragged2e}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{caption}
+\usepackage{tabularx}
+
 
 
 \graphicspath{{images/}}
@@ -23,6 +25,13 @@
   \figurename \ref{ris:#1}
 }
 
+\newenvironment{ztable}[2]
+{\begin{table}[H]
+  \captionsetup{justification=raggedleft,singlelinecheck=false}
+  \caption{#1 \label{tab:#2}}
+}
+{\end{table}}
+
 
 \setmainfont[Mapping=tex-text]{Times New Roman}
 
@@ -33,6 +42,7 @@
 \fancyheadoffset{0cm}
 
 \renewcommand{\figurename}{Рис.}
+\renewcommand{\tablename}{Таблица }
 \renewcommand{\contentsname}{Оглавление}
 \renewcommand\thesection{\arabic{section}.}
 \renewcommand\thesubsection{\arabic{section}.\arabic{subsection}}
