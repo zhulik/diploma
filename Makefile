@@ -8,5 +8,5 @@ distclean: clean
 show: distclean main.pdf main.pdf
 	xdg-open main.pdf
 spell:
-	detex main.tex | aspell list -t | sort | uniq
-	detex main.tex | aspell list -t | sort | uniq | wc -l
+	detex main.tex | aspell list  --add-extra-dicts=./.aspell.ru.pws -t | sort | uniq
+	detex main.tex | aspell list  --add-extra-dicts=./.aspell.ru.pws -t | sort | uniq | wc -l
