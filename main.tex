@@ -15,11 +15,11 @@
 
 \graphicspath{{images/}}
 
-\newcommand{\putimage}[2] {
+\newcommand{\putimage}[3][1] {
   \begin{figure}[H]
-  \center{\includegraphics[width=1\linewidth]{#1}}
-  \caption{#2}
-  \label{ris:#1}
+  \center{\includegraphics[width=#1\linewidth]{#2}}
+  \caption{#3}
+  \label{ris:#2}
   \end{figure}
 }
 
