@@ -11,7 +11,11 @@
 \usepackage{longtable}
 \usepackage{amsmath}
 
+\renewcommand{\refname}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
 
+\makeatletter
+\def\@biblabel#1{\@ifnotempty{#1}{#1. }}
+\makeatletter
 
 \graphicspath{{images/}}
 
